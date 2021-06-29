@@ -1,8 +1,14 @@
 <template>
   <v-app>
-    <v-context>
-      <Pomodoro/>
-    </v-context>
+    <v-content>
+      <v-container>
+        <v-row>
+          <v-col sm="6" offset-sm="3">
+            <Pomodoro/>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-content>
   </v-app>
 </template>
 
@@ -16,14 +22,8 @@ export default {
     Pomodoro,
   },
 
-  data () {
-    return {
-      tab: null,
-        items: [
-          'Appetizers', 'Entrees', 'Deserts', 'Cocktails',
-        ],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    }
-  },
+  data: () => ({
+    //
+  }),
 };
 </script>
